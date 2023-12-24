@@ -56,6 +56,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'ps-linux-test'
-          slot-name: 'production'
-          package: .
+          package: ../dist/my-test-app
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_cad9c764e77f42f48e8887df3f1dc3dc }}
